@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/style.min.css">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
                     <img class="icons" src="img/phone.png" alt="">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Phone:</p>
-                        <p>00 1234 567 889</p>
+                        <p id="phone"></p>
                     </div>
                 </div>
             </div>
@@ -34,7 +35,7 @@
                     <img class="icons" src="img/mail.png" alt="">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Mail:</p>
-                        <p>Lnderson@gmail.com</p>
+                        <p id="mail"></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@
                     <img class="icons" src="img/web.png" alt="">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Web:</p>
-                        <p>www.Lnderson.com</p>
+                        <p id="web"></p>
                     </div>
                 </div>
             </div>
@@ -55,22 +56,15 @@
                 <div class="left_list_skills_ul">
                     <h4>// Professional</h4>
                     <div class="left_list_skills_ul_contains">
-                        <ul>
-                            <li>Creativity</li>
-                            <li>Teamwork</li>
-                            <li>Communication</li>
-                            <li>Hardwork</li>
+                        <ul id="professional-skills">
+
                         </ul>
                     </div>
                     <div class="left_list_skills_ul">
                         <h4>// Technical</h4>
                         <div class="left_list_skills_ul_contains">
-                            <ul>
-                                <li>Wordpress</li>
-                                <li>HTML</li>
-                                <li>Jquery</li>
-                                <li>Photoshop</li>
-                                <li>Joomla</li>
+                            <ul id="technical-skills">
+
                             </ul>
                         </div>
                     </div>
@@ -84,7 +78,7 @@
                 <div class="left_list_ul">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Facebook</p>
-                        <p>Facebook.com/username</p>
+                        <p id="facebook"></p>
                     </div>
                 </div>
             </div>
@@ -92,7 +86,7 @@
                 <div class="left_list_ul">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Linkedin</p>
-                        <p>Linkedin.com/username</p>
+                        <p id="linkedin"></p>
                     </div>
                 </div>
             </div>
@@ -100,7 +94,7 @@
                 <div class="left_list_ul">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Behance</p>
-                        <p>Behance.com/username</p>
+                        <p id="behance"></p>
                     </div>
                 </div>
             </div>
@@ -108,7 +102,7 @@
                 <div class="left_list_ul">
                     <div class="left_list_ul_text">
                         <p class="left_list_ul_text_name">Twitter</p>
-                        <p>twitter.com/username</p>
+                        <p id="twitter"></p>
                     </div>
                 </div>
             </div>
@@ -118,11 +112,12 @@
         <div class="right_container">
         <div class="right_block_name">
             <div class="name_and_position">
-                <h1>
-                    Laura
-                    <span class="last_name">Anderson</span>
+                <h1 id="person_name">
+                    <span class="first_name" id="first_name"></span>
+                    <span class="last_name" id="last_name"></span>
                 </h1>
                 <h4>Web Design & Developer</h4>
+
             </div>
             <div class="about_me">
                 <h3>Hello, I’m Laura</h3>
@@ -149,7 +144,7 @@
                 </div>
                 <div class="timeline_item">
                     <div class="timeline_content">
-                        <div class="timeline_content_left">
+                        <div class="timeline_content_left" >
                             <p class="bold_left">Senior<br> web developer</p>
                             <p>Jan 2013 - Dec 2015</p>
                         </div>
@@ -266,5 +261,6 @@
         </div>
     </div>
 </div>
+<script src="js/scripts.min.js"></script>
 </body>
 </html>

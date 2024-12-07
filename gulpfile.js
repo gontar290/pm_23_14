@@ -58,6 +58,14 @@ async function imgs() {
         .pipe(browserSync.stream());
 }
 
+// Process data.json
+function json() {
+    return gulp.src("./app/json/*.json", { allowEmpty: true })
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest("./dist/json"))
+        .pipe(browserSync.stream());
+}
+
 // Initialize BrowserSync server
 function browserSyncInit(done) {
     browserSync.init({
@@ -75,16 +83,19 @@ function watchFiles() {
     gulp.watch("./app/scss/*.scss", sassTask);
     gulp.watch("./app/js/*.js", scripts);
     gulp.watch("./app/img/*.{jpg,jpeg,png,gif}", imgs);
+    gulp.watch("./app/json/*.json", json);
 }
 
 exports.html = html;
 exports.sass = sassTask;
 exports.scripts = scripts;
 exports.imgs = imgs;
+exports.json = json;
 exports.watch = gulp.parallel(watchFiles, browserSyncInit);
 
 // Default task to run BrowserSync and watch for changes
 exports.default = gulp.series(
-    gulp.parallel(html, sassTask, scripts, imgs),
+    gulp.parallel(html, sassTask, scripts, imgs, json),
     gulp.parallel(watchFiles, browserSyncInit)
 );
+

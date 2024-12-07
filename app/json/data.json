@@ -1,0 +1,30 @@
+{
+  "first_name": "Laura",
+  "last_name": "Anderson",
+  "contacts": {
+    "phone": "00 1234 567 889",
+    "mail": "Lnderson@gmail.com",
+    "web": "www.Lnderson.com"
+  },
+  "skills": {
+    "professional": [
+      "Creativity",
+      "Teamwork",
+      "Communication",
+      "Hardwork"
+    ],
+    "technical": [
+      "Wordpress",
+      "HTML",
+      "Jquery",
+      "Photoshop",
+      "Joomla"
+    ]
+  },
+  "social": {
+    "facebook": "Facebook.com/username",
+    "linkedin": "Linkedin.com/username",
+    "behance": "Behance.com/username",
+    "twitter": "twitter.com/username"
+  }
+}
